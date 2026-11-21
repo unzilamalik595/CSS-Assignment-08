@@ -1,13 +1,10 @@
-
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 
-     font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
     /* color: #183153; */
 }
 
@@ -16,8 +13,8 @@
 
 
 :root {
-    --colour-red:oklch(57.7% .245 27.325);
-    --dark-blue:oklch(27.9% .041 260.031);
+    --colour-red: oklch(57.7% .245 27.325);
+    --dark-blue: oklch(27.9% .041 260.031);
 }
 
 /* ---------Top bar------------ */
@@ -26,18 +23,18 @@
 
 .topbar {
     background: #0b2545;
-    padding:0px 150px;
+    padding: 0px 150px;
     color: #ffffff;
     font-family: Arial, sans-serif;
-display: flex;
-/* height: 30px; */
+    display: flex;
+    /* height: 30px; */
 }
 
 .emergency-info {
     display: flex;
     align-items: center;
     gap: 15px;
-       margin-top: 10px;
+    margin-top: 10px;
 
 }
 
@@ -71,8 +68,9 @@ display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 22px;
-        color:  oklch(70.4% .04 256.788);;
-margin-top: -15px;
+    color: oklch(70.4% .04 256.788);
+    ;
+    margin-top: -15px;
 }
 
 .timing-info {
@@ -81,18 +79,21 @@ margin-top: -15px;
     gap: 8px;
     font-size: 12px;
     white-space: nowrap;
-          color:  oklch(70.4% .04 256.788);;
+    color: oklch(70.4% .04 256.788);
+    ;
 
 }
 
-.timing-info i,span{
+.timing-info i,
+span {
     font-size: 14px;
-        color:  oklch(70.4% .04 256.788);;
+    color: oklch(70.4% .04 256.788);
+    ;
 }
 
 /*-------------- EMERGENCY BUTTON ---------------*/
 
- .emergency-btn {
+.emergency-btn {
     background: #dc3545;
     color: #ffffff;
     padding: 5px 5px;
@@ -106,7 +107,7 @@ margin-top: -15px;
     white-space: nowrap;
     transition: all 0.3s ease;
     animation: emergencyBlink 1.2s infinite;
-} 
+}
 
 .emergency-btn:hover {
     background: #a71d2a;
@@ -115,18 +116,20 @@ margin-top: -15px;
 
 /*------------ BLINKING DOT ---------------*/
 
-.blink-dot { 
+.blink-dot {
     width: 5px;
     height: 5px;
     background: #dc3545;
     border-radius: 50%;
     animation: dotBlink 1s infinite;
-} 
+}
 
- 
+
 
 @keyframes dotBlink {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
 
@@ -135,10 +138,19 @@ margin-top: -15px;
     }
 }
 
+/*--------------- full-screen RESPONSIVE -----------------*/
+@media (max-width: 1286px) {
+    .topbar {
+        padding: 0px 40px;
+    }
+
+}
+
 /*--------------- TABLET RESPONSIVE -----------------*/
 
+
 @media (max-width: 991px) {
-    .topbar  {
+    .topbar {
         padding: 9px 10px;
     }
 
@@ -162,9 +174,9 @@ margin-top: -15px;
         padding: 5px 5px;
         font-size: 10px;
     }
- 
 
-   
+
+
 }
 
 /*----------------- MOBILE RESPONSIVE ---------------------*/
@@ -197,7 +209,8 @@ margin-top: -15px;
         font-size: 10px;
         padding: 5px 5px;
     }
-    .gmail{
+
+    .gmail {
         display: none;
     }
 }
@@ -237,7 +250,7 @@ margin-top: -15px;
 
 .cardiocare-navbar {
     background: #ffffff;
-    padding:0px 150px;
+    padding: 0px 150px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
     width: 100%;
 }
@@ -255,14 +268,14 @@ margin-top: -15px;
 .logo-box {
     width: 40px;
     height: 40px;
-    background:var(--colour-red);
+    background: var(--colour-red);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 6px;
     font-size: 20px;
-            margin-bottom: 5px;
+    margin-bottom: 5px;
 
 }
 
@@ -274,7 +287,7 @@ margin-top: -15px;
 }
 
 .logo-text span {
-    color:black;
+    color: black;
     font-size: 11px;
     letter-spacing: 1px;
 }
@@ -292,7 +305,7 @@ margin-top: -15px;
 
 .cardiocare-navbar .nav-link:hover,
 .cardiocare-navbar .nav-link.active {
-    color:var(--colour-red);
+    color: var(--colour-red);
 }
 
 /*----------------------- APPOINTMENT BUTTON ------------*/
@@ -310,14 +323,14 @@ margin-top: -15px;
     gap: 9px;
     white-space: nowrap;
     transition: all 0.3s ease;
-        box-shadow: -1px 2px 10px 2px rgba(134, 5, 5, 0.775);
+    box-shadow: -1px 2px 10px 2px rgba(134, 5, 5, 0.775);
     width: 220px;
-    padding: 15px 30px ;
+    padding: 15px 30px;
 }
 
 .appointment-btn:hover {
-  transition: all 0.1 ease-in;
-          box-shadow: -1px 5px 10px 5px rgba(134, 5, 5, 0.775);
+    transition: all 0.1 ease-in;
+    box-shadow: -1px 5px 10px 5px rgba(134, 5, 5, 0.775);
 
 }
 
@@ -356,8 +369,16 @@ margin-top: -15px;
     color: var(--colour-red);
 }
 
+/*--------------- full-screen RESPONSIVE -----------------*/
+@media (max-width: 1286px) {
+    .cardiocare-navbar {
+        padding: 0px 40px;
+    }
 
- 
+}
+
+
+
 /* ---------------LARGE SCREEN - FULL NAVBAR----------- */
 
 @media (min-width: 1200px) {
@@ -366,7 +387,7 @@ margin-top: -15px;
         display: flex !important;
         flex-basis: auto;
     }
-  
+
 
     .cardiocare-navbar .navbar-nav {
         display: flex;
@@ -421,24 +442,25 @@ margin-top: -15px;
 
 
 @media (max-width: 991px) {
-     .cardiocare-navbar{
+    .cardiocare-navbar {
         padding: 9px 10px;
     }
-.logo-box {
+
+    .logo-box {
         width: 35px;
         height: 35px;
         font-size: 20px;
         margin-bottom: 10px;
     }
 
-    
 
-   
+
+
 }
 
 /* ------------------ MOBILE -----------------*/
 
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
 
     .cardiocare-navbar {
         padding: 12px 10px;
@@ -459,7 +481,7 @@ margin-top: -15px;
         font-size: 9px;
     }
 }
- 
+
 
 
 /*---------------- FIX DESKTOP NAVBAR --------------*/
@@ -501,37 +523,25 @@ margin-top: -15px;
 
 /* --------------HERO SECTION --------------*/
 
-
-.hero-section .col-lg-6 {
-    width: 40%;
-    /* flex: 0 0 50%; */
-    display: flex;
-}
-
-
-section{
-    display: flex;
-}
 .hero-section {
-    background: #f4fbff;
-    background-image: linear-gradient(rgba(3, 6, 88, 0.382),rgba(10, 5, 62, 0.767),rgba(26, 24, 24, 0.382),rgba(166, 167, 163, 0.866)),url(./assets/images/hero-background.jpg);
+    /* background: #f4fbff; */
+    background-image: linear-gradient(rgba(3, 3, 18, 0.71), rgba(3, 2, 10, 0.767), rgba(26, 24, 24, 0.382), rgba(166, 167, 163, 0.605)), url(./assets/images/hero-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 70px 0;
     overflow: hidden;
-    /* width: 100%; */
+    width: 100%;
     display: flex;
-       flex-direction: row;
+    /* flex-direction: column; */
 
-max-height: 700px;
-flex-wrap: wrap;
+    /* max-height: 700px; */
+    flex-wrap: wrap;
     align-items: center;
+    padding: 120px 150px;
+
 }
-.hero-section .container  {
-    padding: 0 130px;
-}
-.hero-section .col-lg-6  {
-    width: 50%;
+
+.hero-section .hero-content {
+    width: 55%;
     /* flex: 0 0 50%; */
 }
 
@@ -546,36 +556,43 @@ flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 12px;
     margin-bottom: 25px;
+    /* width: 400px; */
+    align-items: center;
 }
 
 .hero-badges span {
-    background: rgba(56, 77, 110, 0.686);
+    background: rgba(81, 115, 179, 0.218);
     color: white;
     padding: 10px 20px;
     border-radius: 30px;
     font-size: 13px;
     font-weight: 600;
+    width: 235px;
+    height: 40px;
+    align-items: center;
+    border: rgba(255, 255, 255, 0.337) 0.2px solid;
+
 }
-.hero-badges span .heart{
+
+.hero-badges span .heart {
     color: var(--colour-red);
-   /* padding:0px 20px; */
+    /* padding:0px 20px; */
 }
-.hero-badges span .pulse{
-    color: rgb(14, 165, 233);;
-      /* padding:0px 20px; */
+
+.hero-badges span .pulse {
+    color: rgb(14, 165, 233);
+    ;
+    /* padding:0px 20px; */
 
 }
 
-.hero-badges span .shield{
+.hero-badges span .shield {
     color: rgb(22, 163, 74);
-      /* padding:0px 20px; */
+    /* padding:0px 20px; */
 
 }
- 
-.hero-content{
-    width: 70%;
 
-}
+
 
 .hero-content h1 {
     color: white;
@@ -598,16 +615,16 @@ flex-wrap: wrap;
 
 
 .hero-content p {
-    color:oklch(86.9% .022 252.894);;
+    color: oklch(86.9% .022 252.894);
     font-size: 20px;
     line-height: 1.8;
     margin-bottom: 25px;
     font-weight: 500px;
-        width: 400px;
+    width: 400px;
 
 }
 
-/* BUTTON */
+/*---------------- BUTTON -----------------*/
 
 .hero-button {
     display: flex;
@@ -619,32 +636,34 @@ flex-wrap: wrap;
 .hero-btn-primary,
 .hero-btn-outline {
     padding: 12px 20px;
-    border-radius: 5px;
+    border-radius: 7px;
     text-decoration: none;
     font-size: 13px;
     font-weight: 600;
     transition: 0.3s;
+    margin-right: 10px;
 }
 
 .hero-btn-primary {
-    background:  rgb(189, 5, 5);
-;
+    background: rgb(189, 5, 5);
+    ;
     color: #fff;
-            box-shadow: -1px 2px 10px 2px rgba(134, 5, 5, 0.775);
-width: 220px;
-    padding: 15px 30px ;
-
+    box-shadow: -1px 2px 10px 2px rgba(134, 5, 5, 0.775);
+    width: 220px;
+    padding: 15px 30px;
+    border: rgba(255, 255, 255, 0.458) 0.2px solid;
 }
 
+
 .hero-btn-primary:hover {
-               box-shadow: -1px 5px 10px 5px rgba(134, 5, 5, 0.775);
+    box-shadow: -1px 5px 10px 5px rgba(134, 5, 5, 0.775);
 
 }
 
 .hero-btn-outline {
     border: 1px solid white;
     color: white;
-    padding: 15px 30px ;
+    padding: 15px 30px;
     width: 220px;
 
 }
@@ -652,7 +671,7 @@ width: 220px;
 .hero-btn-outline:hover {
     background: rgba(72, 72, 129, 0.649);
     color: #fff;
-        border: 2px solid white;
+    border: 2px solid white;
 
 }
 
@@ -675,25 +694,37 @@ width: 220px;
 }
 
 .stat-item span {
-    color: white;
+    color: oklch(86.9% .022 252.894);
     font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
-/* RIGHT IMAGE */
+/*------------------- RIGHT IMAGE ---------------------*/
 
 .hero-image {
-    /* position: relative; */
-    padding: 10px;
+    /* padding: 10px; */
     /* width: 30%; */
-    width: 20%;
+    width: 44%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    height: 320px;
+    background-color: #ffffff;
+}
+.hero-image .box{
+   
+    height: 220px;
+    height: 220px;
+    background-color: brown;
 }
 
-.hero-image img {
+ .hero-image img {
     width: 300px;
     height: 300px;
     /* object-fit: cover; */
     border-radius: 12px;
-}
+} 
 
 /* FLOATING CARD */
 
@@ -707,7 +738,7 @@ width: 220px;
     align-items: center;
     gap: 12px;
     border-radius: 8px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
 }
 
 .hero-emergency-card i {
@@ -725,6 +756,16 @@ width: 220px;
     color: #64748b;
     font-size: 11px;
 }
+
+/*--------------- full-screen RESPONSIVE -----------------*/
+@media (max-width: 1286px) {
+    .hero-section {
+
+        padding: 120px 40px;
+    }
+
+}
+
 
 /* TABLET */
 
@@ -784,10 +825,6 @@ width: 220px;
     }
 }
 
-   
-
-
-   
 
 
 
@@ -800,7 +837,11 @@ width: 220px;
 
 
 
- 
+
+
+
+
+
 
 
 
@@ -809,8 +850,3 @@ width: 220px;
 
 
 /* ----------------Hero-section  ---------------*/
-
-
-
-   
-   
